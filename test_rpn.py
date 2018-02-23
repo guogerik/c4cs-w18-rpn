@@ -15,7 +15,7 @@ class TestBasics(unittest.TestCase):
 		with self.assertRaises(TypeError):
 			result = rpn.calculate("1 2 3 +")
 	def test_multiply(self):
-		result = rpn.multiply("4 9 *")
+		result = rpn.calculate("4 9 *")
 		self.assertEqual(36,result)
 	def test_multiplys(self):
 		result = rpn.calculate("2 3 * 4 *")
