@@ -20,4 +20,15 @@ class TestBasics(unittest.TestCase):
 	def test_multiplys(self):
 		result = rpn.calculate("2 3 * 4 *")
 		self.assertEqual(24,result)
+	def test_divide(self):
+		result = rpn.calculate("8 4 /")
+		self.assertEqual(2,result)
+	def test_divides(self):
+		result = rpn.calculate("20 4 / 5 /")
+		self.assertEqual(1,result)
+	def test_floatingdivision(self):
+		result = rpn.calculate("20 4 / 2 /")
+		self.assertEqual(2.5,result)
+
+
 
