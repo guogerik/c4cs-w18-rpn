@@ -7,6 +7,7 @@ operators = {
 	'-':operator.sub,
 	'*':operator.mul,
 	'/':operator.truediv,
+	'^':operator.pow,
 }
 def calculate(arg):
 	stack = list()
@@ -36,4 +37,3 @@ def main():
 
 if __name__ == "__main__":
 	main()
-
